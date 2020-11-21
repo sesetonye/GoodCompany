@@ -11,7 +11,7 @@
     <div class="form-group row">
         <label asp-for="Name" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <input asp-for="Name" class="form-control" placeholder="Name" />
+            <input asp-for="Name" class="form-control" placeholder="Name" required/>
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
     </div>
@@ -42,14 +42,14 @@
     <div class="form-group row">
         <label asp-for="Quantity" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <input asp-for="Quantity" class="form-control" placeholder="Quantity" />
+            <input asp-for="Quantity" class="form-control" placeholder="Quantity" required/>
             <span asp-validation-for="Quantity" class="text-danger"></span>
         </div>
     </div>
     <div class="form-group row">
         <label asp-for="Processor" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <input asp-for="Processor" class="form-control" placeholder="Processor" />
+            <input asp-for="Processor" class="form-control" placeholder="Processor" required/>
             <span asp-validation-for="Processor" class="text-danger"></span>
         </div>
     </div>
@@ -57,7 +57,7 @@
     <div class="form-group row">
         <label asp-for="RamSlots" class="col-sm-2 col-form-label"></label>
         <div class="col-sm-10">
-            <input asp-for="RamSlots" class="form-control" placeholder="Ram Slots" />
+            <input asp-for="RamSlots" class="form-control" placeholder="Ram Slots" required/>
             <span asp-validation-for="RamSlots" class="text-danger"></span>
         </div>
     </div>

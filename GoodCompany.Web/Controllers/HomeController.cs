@@ -37,7 +37,7 @@ namespace GoodCompany.Web.Controllers
         public IActionResult Detail(Guid id)
         {
             var products = _unitOfWork.Products.GetById(id);
-            return View(products);
+            return View(_productViewService.ConvertProductToProductViewModel(products));
         }
         public ViewResult Add()
         {

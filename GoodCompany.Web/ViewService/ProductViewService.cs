@@ -29,12 +29,16 @@ namespace GoodCompany.Web.ViewService
         public ProductViewModel ConvertProductToProductViewModel(Product product )
         {
             var model = NewProductViewModel();
-            model.Name = product.Name;
-            model.Processor = product.ProductProperty.Processor;
-            model.Quantity = product.ProductQuantity.Quantity;
-            model.RamSlots = product.ProductProperty.RamSlots;
-            model.ScreenSize = product.ProductProperty.ScreenSize;
-            model.UsbPorts = product.ProductProperty.UsbPorts;
+            var property = _unitOfWork.ProductProperty.Find(x => x.ProductId == product.ProductId).FirstOrDefault();
+            var quantity = _unitOfWork.ProductQuantity.Find(x => x.ProductId == product.ProductId).FirstOrDefault();
+
+            model.Name = product.Name;            
+            model.Processor = property.Processor;
+            model.Quantity = quantity.Quantity;
+            model.RamSlots = property.RamSlots;
+            model.ScreenSize = property.ScreenSize;
+            model.UsbPorts = property.UsbPorts;
+            model.ProductId = product.ProductId;
             model.Id = product.Id;
             return model;
 
