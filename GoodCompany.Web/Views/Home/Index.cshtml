@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ProductViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All Products</h1>
+
+<div>
+    <a asp-controller="home" asp-action="add" class="btn btn-primary m-1">Add</a>
+</div>
+<div class="card-deck">
+    @foreach (var product in Model)
+    {
+        <div class="card m-3" tyle="min-width: 18rem; max-width:30.5%;">
+            <div class="card-header">
+                <h3>@product.Name</h3>
+            </div>
+            <div>
+                @product.Processor
+            </div>
+            <div class="card-footer text-center">
+                <a asp-contoller="home" asp-action="detail" asp-route-id="@product.ProductId" class="btn btn-primary m-1">View</a>                
+            </div>
+
+        </div>
+    }
+</div>

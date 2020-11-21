@@ -1,0 +1,11 @@
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\bin\Debug\netcoreapp2.2\GoodCompany.Entity.deps.json
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\bin\Debug\netcoreapp2.2\GoodCompany.Entity.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\bin\Debug\netcoreapp2.2\GoodCompany.Entity.pdb
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.xml
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.csproj.CoreCompileInputs.cache
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.AssemblyInfoInputs.cache
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.AssemblyInfo.cs
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.csproj.CopyComplete
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.Entity\obj\Debug\netcoreapp2.2\GoodCompany.Entity.pdb
