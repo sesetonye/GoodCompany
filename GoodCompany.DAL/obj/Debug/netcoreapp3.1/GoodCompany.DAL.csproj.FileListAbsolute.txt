@@ -1,0 +1,12 @@
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\bin\Debug\netcoreapp3.1\GoodCompany.DAL.deps.json
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\bin\Debug\netcoreapp3.1\GoodCompany.DAL.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\bin\Debug\netcoreapp3.1\GoodCompany.DAL.pdb
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\bin\Debug\netcoreapp3.1\GoodCompany.Entity.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\bin\Debug\netcoreapp3.1\GoodCompany.Entity.pdb
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.csprojAssemblyReference.cache
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.AssemblyInfoInputs.cache
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.AssemblyInfo.cs
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.csproj.CoreCompileInputs.cache
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.csproj.CopyComplete
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.dll
+C:\Users\seset\source\repos\GoodCompany\GoodCompany.DAL\obj\Debug\netcoreapp3.1\GoodCompany.DAL.pdb
