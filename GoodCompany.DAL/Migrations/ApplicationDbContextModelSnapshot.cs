@@ -15,20 +15,18 @@ namespace GoodCompany.DAL.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.10")
+                .HasAnnotation("ProductVersion", "2.2.0-rtm-35687")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("GoodCompany.BL.Brand", b =>
+            modelBuilder.Entity("GoodCompany.Entity.Brand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -52,16 +50,14 @@ namespace GoodCompany.DAL.Migrations
                         });
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.ComputerType", b =>
+            modelBuilder.Entity("GoodCompany.Entity.ComputerType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired();
 
                     b.HasKey("Id");
 
@@ -80,53 +76,44 @@ namespace GoodCompany.DAL.Migrations
                         });
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.Product", b =>
+            modelBuilder.Entity("GoodCompany.Entity.Product", b =>
                 {
                     b.Property<Guid>("ProductId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired();
 
                     b.HasKey("ProductId");
+
+                    b.HasAlternateKey("Id");
 
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.ProductProperty", b =>
+            modelBuilder.Entity("GoodCompany.Entity.ProductProperty", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("BrandId")
-                        .HasColumnType("int");
+                    b.Property<int>("BrandId");
 
-                    b.Property<int>("ComputerTypeId")
-                        .HasColumnType("int");
+                    b.Property<int>("ComputerTypeId");
 
-                    b.Property<string>("Processor")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Processor");
 
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<Guid>("ProductId");
 
-                    b.Property<int>("RamSlots")
-                        .HasColumnType("int");
+                    b.Property<int>("RamSlots");
 
-                    b.Property<float>("ScreenSize")
-                        .HasColumnType("real");
+                    b.Property<float>("ScreenSize");
 
-                    b.Property<int>("UsbPorts")
-                        .HasColumnType("int");
+                    b.Property<int>("UsbPorts");
 
                     b.HasKey("Id");
 
@@ -136,18 +123,15 @@ namespace GoodCompany.DAL.Migrations
                     b.ToTable("ProductProperty");
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.ProductQuantity", b =>
+            modelBuilder.Entity("GoodCompany.Entity.ProductQuantity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<Guid>("ProductId");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
+                    b.Property<int>("Quantity");
 
                     b.HasKey("Id");
 
@@ -157,22 +141,20 @@ namespace GoodCompany.DAL.Migrations
                     b.ToTable("ProductQuantity");
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.ProductProperty", b =>
+            modelBuilder.Entity("GoodCompany.Entity.ProductProperty", b =>
                 {
-                    b.HasOne("GoodCompany.BL.Product", "Product")
+                    b.HasOne("GoodCompany.Entity.Product", "Product")
                         .WithOne("ProductProperty")
-                        .HasForeignKey("GoodCompany.BL.ProductProperty", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GoodCompany.Entity.ProductProperty", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("GoodCompany.BL.ProductQuantity", b =>
+            modelBuilder.Entity("GoodCompany.Entity.ProductQuantity", b =>
                 {
-                    b.HasOne("GoodCompany.BL.Product", "Product")
+                    b.HasOne("GoodCompany.Entity.Product", "Product")
                         .WithOne("ProductQuantity")
-                        .HasForeignKey("GoodCompany.BL.ProductQuantity", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("GoodCompany.Entity.ProductQuantity", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
